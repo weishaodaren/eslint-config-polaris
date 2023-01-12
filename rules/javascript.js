@@ -1,4 +1,14 @@
 module.exports = {
+  env: {
+    es2020: true,
+  },
+  parserOptions: {
+    ecmaVersion: 11,
+    sourceType: "module",
+  },
+  extends: [
+    "eslint:recommended", // https://eslint.org/docs/latest/rules/
+  ],
   rules: {
     // 数组回掉返回
     "array-callback-return": [

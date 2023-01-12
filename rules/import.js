@@ -3,10 +3,15 @@ module.exports = {
     es6: true,
   },
   parserOptions: {
-    ecmaVersion: 6,
+    project: ["../tsconfig.json"],
+    ecmaVersion: 11,
     sourceType: "module",
   },
   plugins: ["import"],
+  extends: [
+    "plugin:import/recommended", // https://github.com/import-js/eslint-plugin-import
+    "plugin:import/typescript",
+  ],
 
   settings: {
     "import/resolver": {

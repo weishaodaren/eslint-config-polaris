@@ -1,12 +1,13 @@
 module.exports = {
   extends: [
     "./rules/javascript",
+    "./rules/typescript",
     "./rules/import",
     "./rules/react",
-    "./rules/typescript",
+    "./rules/prettier",
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 11,
     sourceType: "module",
   },
   rules: {},
