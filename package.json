@@ -1,0 +1,41 @@
+{
+  "name": "eslint-config-polaris",
+  "version": "1.0.0",
+  "description": "This package provides Polaris's base JS .eslintrc  as an extensible shared config.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weishaodaren/eslint-config-polaris.git"
+  },
+  "author": "weishaodaren (weishaodaren@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weishaodaren/eslint-config-polaris/issues"
+  },
+  "homepage": "https://github.com/weishaodaren/eslint-config-polaris#readme",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "react",
+    "typescript-eslint"
+  ],
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.0",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.0",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+}
