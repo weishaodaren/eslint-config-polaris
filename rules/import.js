@@ -12,7 +12,6 @@ module.exports = {
     "plugin:import/recommended", // https://github.com/import-js/eslint-plugin-import
     "plugin:import/typescript",
   ],
-
   settings: {
     "import/resolver": {
       node: {
@@ -139,6 +138,24 @@ module.exports = {
       {
         importFunctions: [],
         webpackChunknameFormat: "[0-9a-zA-Z-_/.]+",
+      },
+    ],
+    "import/no-unresolved": [
+      2,
+      {
+        ignore: [
+          "@polaris-pm",
+          "hooks",
+          "components",
+          "polaris-components",
+          "views",
+          "routes",
+          "constants",
+          "layout",
+          "^styles/*",
+          "\\.(less|css)$",
+          "\\.svg$",
+        ],
       },
     ],
   },

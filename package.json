@@ -4,7 +4,9 @@
   "description": "This package provides Polaris's base JS .eslintrc  as an extensible shared config.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --report-unused-disable-directives .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "pnpm publish --no-git-checks"
   },
   "repository": {
     "type": "git",
