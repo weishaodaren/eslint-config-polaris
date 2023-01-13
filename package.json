@@ -1,8 +1,11 @@
 {
   "name": "eslint-config-polaris",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This package provides Polaris's base JS .eslintrc  as an extensible shared config.",
   "main": "index.js",
+  "publishConfig": {
+    "@weishaodaren:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "lint": "eslint --report-unused-disable-directives .",
     "test": "echo \"Error: no test specified\" && exit 1"
