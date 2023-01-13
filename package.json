@@ -4,7 +4,9 @@
   "description": "This package provides Polaris's base JS .eslintrc  as an extensible shared config.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --report-unused-disable-directives .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "pnpm publish --no-git-checks"
   },
   "repository": {
     "type": "git",
@@ -14,6 +16,14 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/weishaodaren/eslint-config-polaris/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./rules/javascript": "./rules/javascript.js",
+    "./rules/typescript": "./rules/typescript.js",
+    "./rules/import": "./rules/import.js",
+    "./rules/react": "./rules/react.js",
+    "./rules/prettier": "./rules/prettier.js"
   },
   "homepage": "https://github.com/weishaodaren/eslint-config-polaris#readme",
   "keywords": [
