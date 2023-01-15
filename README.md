@@ -1,10 +1,12 @@
-# eslint-config-polaris
+## eslint-config-polaris
+
+> 极星代码规范 ❄️
 
 This package provides Polaris's base JS .eslintrc as an extensible shared config.
 
-## Usage
+### Installation
 
-1. Install the correct versions of each package, which are listed by the command:
+Install the correct versions of each package, which are listed by the command:
 
 Which produces and runs a command like:
 
@@ -22,4 +24,43 @@ npm install --save-dev
     prettier@latest
 ```
 
-2. Add `"extends": "polaris"` to your .eslintrc
+or use `npm-install-peers`
+
+### Useage
+
+In your .eslintrc
+
+1. With Parser
+
+```json
+"parser": "@typescript-eslint/parser"
+```
+
+2. With Plugins
+
+```json
+"plugins": ["import", "@typescript-eslint", "react", "react-hooks"]
+```
+
+3. With extends
+
+```json
+"extends": "polaris"
+```
+
+### Configuration
+
+Defaults
+
+```json
+"extends": [
+  "plugin:import/recommended",
+  "plugin:import/typescript",
+  "eslint:recommended",
+  "plugin:react/recommended",
+  "plugin:react-hooks/recommended",
+  "plugin:react/jsx-runtime",
+  "plugin:prettier/recommended",
+  "prettier"
+]
+```
