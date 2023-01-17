@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-polaris",
-  "version": "1.2.1",
-  "description": "This package provides Polaris's base JS .eslintrc  as an extensible shared config.",
+  "version": "1.2.2",
+  "description": "极星代码规范 ⭐️",
   "main": "index.js",
   "publishConfig": {
     "@weishaodaren:registry": "https://npm.pkg.github.com"
