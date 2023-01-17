@@ -1,8 +1,6 @@
-## eslint-config-polaris
+## 极星代码规范 eslint-config-polaris
 
-> 极星代码规范 ❄️
-
-This package provides Polaris's base JS .eslintrc as an extensible shared config.
+> This package provides Polaris's base JS .eslintrc as an extensible shared config.
 
 ### Installation
 
