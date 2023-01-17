@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-polaris",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "This package provides Polaris's base JS .eslintrc  as an extensible shared config.",
   "main": "index.js",
   "publishConfig": {
