@@ -13,6 +13,8 @@ module.exports = {
 
   // https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
   rules: {
+    // 关闭展示displayName
+    "react/display-name": 0,
     // 强制使用默认值
     "react/require-default-props": 2,
     // 强制使用与默认类型相同的默认值
