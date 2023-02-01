@@ -3,7 +3,6 @@ module.exports = {
   extends: [
     "plugin:react/recommended", // https://github.com/jsx-eslint/eslint-plugin-react/#shareable-configs
     "plugin:react-hooks/recommended",
-    "plugin:react/jsx-runtime",
   ],
   parserOptions: {
     ecmaFeatures: {
