@@ -14,10 +14,10 @@ module.exports = {
   rules: {
     // 关闭展示displayName
     "react/display-name": 0,
-    // 强制使用默认值
-    "react/require-default-props": 2,
-    // 强制使用与默认类型相同的默认值
-    "react/default-props-match-prop-types": 2,
+    // 关闭强制使用默认值
+    "react/require-default-props": 0,
+    // 关闭使用与默认类型相同的默认值(同上 SFC不使用defaultProps 推荐ES6默认参数)
+    "react/default-props-match-prop-types": 0,
     // 强制函数组件命名使用箭头函数
     "react/function-component-definition": [
       2,
