@@ -27,6 +27,17 @@ module.exports = {
   },
 
   rules: {
+    // 匿名导出规范 https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-anonymous-default-export.md
+    "import/no-anonymous-default-export": [
+      2,
+      {
+        allowArray: true,
+        allowArrowFunction: true,
+        allowAnonymousClass: true,
+        allowAnonymousFunction: true,
+        allowObject: true,
+      },
+    ],
     // 禁止可导出变量let var
     "import/no-mutable-exports": "error",
     // 禁止循环引用
@@ -52,8 +63,6 @@ module.exports = {
         ignoreTypeImports: true, // 忽略类型导入
       },
     ],
-    // 禁止匿名导出
-    "import/no-anonymous-default-export": "error",
     // 强制导入顺序风格
     "import/order": [
       "error",
