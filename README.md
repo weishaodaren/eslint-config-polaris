@@ -34,16 +34,10 @@ In your .eslintrc
 "parser": "@typescript-eslint/parser"
 ```
 
-2. With Plugins
+2. With Extends
 
 ```json
-"plugins": ["import", "@typescript-eslint", "react", "react-hooks"]
-```
-
-3. With extends
-
-```json
-"extends": "polaris"
+ "extends": ["polaris"]
 ```
 
 ### Configuration
