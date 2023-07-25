@@ -3,6 +3,10 @@
     "module": "commonjs",
     "target": "es5",
     "strict": true,
+    "forceConsistentCasingInFileNames":false, // 禁止导入模块时大小写错误
+    "noUnusedLocals":true, // 有未使用的局部变量则抛错
+    "noUnusedParameters":true, // 有未使用的参数则抛错
+    "pretty": true, // 给错误和消息设置样式，使用颜色和上下文
     "esModuleInterop": true
   }
 }

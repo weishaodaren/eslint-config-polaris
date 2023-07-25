@@ -13,14 +13,14 @@ module.exports = {
   // https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
   rules: {
     // 关闭展示displayName
-    "react/display-name": 0,
+    "react/display-name": 'off',
     // 关闭强制使用默认值
-    "react/require-default-props": 0,
+    "react/require-default-props": 'off',
     // 关闭使用与默认类型相同的默认值(同上 SFC不使用defaultProps 推荐ES6默认参数)
-    "react/default-props-match-prop-types": 0,
+    "react/default-props-match-prop-types": 'off',
     // 强制函数组件命名使用箭头函数
     "react/function-component-definition": [
-      2,
+      'error',
       {
         namedComponents: "arrow-function",
         unnamedComponents: "arrow-function",
@@ -28,7 +28,7 @@ module.exports = {
     ],
     // 强制组件解构props
     "react/destructuring-assignment": [
-      2,
+      'error',
       "always",
       {
         destructureInSignature: "always", // 解构签名
@@ -36,20 +36,20 @@ module.exports = {
     ],
     // 警告 尽量不要使用inline-style
     "react/forbid-dom-props": [
-      1,
+      'warn',
       {
         forbid: ["style"],
       },
     ],
     // 强制使用useState结构名称如: [xxx, setXxx] = useState
-    "react/hook-use-state": 2,
+    "react/hook-use-state": 'error',
     // 安全使用iframe
-    "react/iframe-missing-sandbox": 1,
+    "react/iframe-missing-sandbox": 'error',
     // 强制使用boolean熟悉如: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
-    "react/jsx-boolean-value": 2,
+    "react/jsx-boolean-value": 'error',
     // 保持风格统一 事件handlexXxx 传递事件onXxx
     "react/jsx-handler-names": [
-      2,
+      'error',
       {
         eventHandlerPrefix: "handle",
         eventHandlerPropPrefix: "on",
@@ -57,44 +57,59 @@ module.exports = {
     ],
     // 警告jsx嵌套5层
     "react/jsx-max-depth": [
-      1,
+      'warn',
       {
         max: 5,
       },
     ],
     // 强制jsx一行最多3个props
     "react/jsx-max-props-per-line": [
-      2,
+      'error',
       {
         maximum: 3,
       },
     ],
     // 强制使用Context时,使用useMemo/useCallback 减少无意义re-render
-    "react/jsx-no-constructed-context-values": 2,
+    "react/jsx-no-constructed-context-values": 'error',
     // 强制不可使用{...props}
     "react/jsx-props-no-spreading": [
-      2,
+      'error',
       {
         exceptions: ["Route"], // 此元素列外
       },
     ],
+     // 禁止 jsx 中使用无用的引号
+    'react/jsx-curly-brace-presence': ['error', 'never'],
+    // 禁止出现重复的 props
+    'react/jsx-no-duplicate-props': 'error',
+    // 禁止使用未定义的组件
+    'react/jsx-no-undef': 'error',
+    // 禁止无意义的 Fragment 组件
+    'react/jsx-no-useless-fragment': 'error',
+    // 组件的名称必须符合 PascalCase
+    'react/jsx-pascal-case': 'error',
+    // 修复 React 被误报为未使用的变量的问题（仅在开启 no-unused-vars 时有效）
+    'react/jsx-uses-react': 'error',
+    // 修复 no-unused-vars 不检查 jsx 的问题
+    'react/jsx-uses-vars': 'error',
     // 强制不可使用index作为key https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
-    "react/no-array-index-key": 2,
+    "react/no-array-index-key": 'error',
     // TODO: 还未发布 强制数组对象类型使用默认值 https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-object-type-as-default-prop.md
-    // "react/no-object-type-as-default-prop": 2,
+    "react/no-object-type-as-default-prop": 2,
     // 禁止在无状态函数组件使用this
-    "react/no-this-in-sfc": 2,
+    "react/no-this-in-sfc": 'error',
     // 禁止出现不稳定的嵌套组件 https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unstable-nested-components.md
     "react/no-unstable-nested-components": [
-      2,
+      'error',
       {
         allowAsProps: true,
       },
     ],
     // 强制编写无状态纯函数组件
-    "react/prefer-stateless-function": 2,
+    "react/prefer-stateless-function": 'error',
     // 强制自闭合标签
-    "react/self-closing-comp": 2,
+    "react/self-closing-comp": 'error',
+
 
     /*
      * hooks

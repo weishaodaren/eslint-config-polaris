@@ -1,4 +1,4 @@
-module.exports = {
+export default  {
   extends: [
     "./rules/javascript",
     "./rules/typescript",
