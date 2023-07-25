@@ -1,7 +1,6 @@
 {
   "name": "eslint-config-polaris",
   "version": "3.0.0",
-  "type": "module",
   "description": "极星代码规范 ⭐️",
   "main": "index.js",
   "publishConfig": {
@@ -46,5 +45,34 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.x",
+    "@typescript-eslint/parser": "6.x",
+    "eslint": ">=8.24.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.0",
+    "typescript": "5.x"
+  },
+  "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
   }
 }
