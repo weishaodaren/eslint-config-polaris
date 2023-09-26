@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-polaris",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "description": "代码规范 ⭐️",
   "main": "index.js",
   "publishConfig": {
