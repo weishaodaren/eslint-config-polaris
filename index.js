@@ -4,8 +4,7 @@ module.exports = {
     "./rules/typescript",
     "./rules/import",
     "./rules/react",
-    "./rules/prettier",
-    "./rules/css.js"
+    "./rules/prettier"
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 11,

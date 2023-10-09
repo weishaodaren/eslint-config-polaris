@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-polaris",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "代码规范 ⭐️",
   "main": "index.js",
   "publishConfig": {
@@ -44,9 +44,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.3",
-    "stylelint": "^15.10.3",
-    "stylelint-config-recommended": "^13.0.0",
-    "stylelint-prettier": "^4.0.2",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
@@ -59,9 +56,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.0",
-    "stylelint": "^15.x",
-    "stylelint-config-recommended": "^13.0.0",
-    "stylelint-prettier": "^4.0.2",
     "typescript": "5.x"
   },
   "peerDependenciesMeta": {
@@ -78,15 +72,6 @@
       "optional": true
     },
     "typescript": {
-      "optional": true
-    },
-    "stylelint": {
-      "optional": true
-    },
-    "stylelint-config-recommended": {
-      "optional": true
-    },
-    "stylelint-prettier": {
       "optional": true
     }
   }
