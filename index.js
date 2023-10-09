@@ -5,6 +5,7 @@ module.exports = {
     "./rules/import",
     "./rules/react",
     "./rules/prettier",
+    "./rules/css.js"
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 11,
