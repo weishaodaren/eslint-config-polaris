@@ -12,6 +12,13 @@ module.exports = {
 
   // https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
   rules: {
+    "react/prop-types": [
+      2,
+      {
+        ignore: ['children', 'className'],
+        skipUndeclared: true
+       }
+      ],
     // 关闭展示displayName
     "react/display-name": 'off',
     // 关闭强制使用默认值
